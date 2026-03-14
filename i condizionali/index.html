@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condizionali</title>
+</head>
+
+<body>
+    <script>
+        //1) Cosa sono le condizioni:sono istruzioni di controllo che permettono al codice di prendere decisioni;
+
+        //2) If else statement(dichiarazione);
+        let nome = 'Gianfranco';
+
+
+        if (nome == 'Gianfranco') {
+            console.log('ciao Gianfranco')
+        } else {
+            console.log('ciao Alfredo')
+        }//viene preso il nome uguale in talcaso se nel if(se) non corrisponde al uguale  viene preso quello dichiarato da else(altro/a)
+
+
+        //3) Else if: permette di  controllare più condizioni in sequenza se quelle predenti sono false o per definire alternative specifiche prima di un else finale
+        let esame = 70;
+
+        if (esame < 50) {
+            console.log("buongiorgio")//Eseguito se ora <10
+        } else if (esame < 90) {
+            console.log("buonanotte")//Eseguito de la prima condizioneè falsa e ora <90
+        } else {
+            console.log("buonpranzo")//Eseguito se tutte le condizioni precedenti sono false
+        }//Risultato nella console: buonanotte
+
+
+        //4) Ripasso sugli operatori comparativi  === != == !== < > <= >=
+        let numero = 28
+
+        if (numero > 30) {
+            console.log('ok')
+        } else {
+            console.log('non va bene')
+        }// uscirrà nella console non vabene;invece se era minore usciva ok così il resttante dei camparativi
+
+
+        //5) Innestare gli if
+        let numeroo = 69;
+
+
+        if (numeroo < 80)
+
+            if (numeroo % 2 == 0)//verifica che il numero sia pari  invece %2 !==0  il numero se è dispari 
+            }
+        console.log('numero pari')
+            }else {
+            console.log('numero dispari')
+        }//così abbiamo impartito un ordine in base al numero che si scrive ci darà il genere
+        if (numeroo < 70) {
+            console.log("Il numero è minore di 70");
+        } else {
+            console.log("Il numero è maggioreo uguale a 70")//Fine innesto
+        }
+
+        //6) Operatori logici AND OR E NOT
+        let name = 'Carlo';
+        let number = 22;
+        let isOnline = true
+
+        if (number < 20 && number % 2 == 0) //segno(&&) and che tutte le condizioni specificate siano ok
+            if (number < 19 || number % 2 !== 0)//segno(||) or  basta una  delle  delle condizioni sia ok
+                if (!(name == 'Carlo'))//segno not(!) vuol dire è diverso da name sceglieto in questo caso uscira else (non va bene)
+
+                    if (!isOnline) {
+                        console.log('non è online')
+                    } else {
+                        console.log('è online')
+                    }//in questo caso stiamo chidendo non è online qui sbuentra else 
+        {
+            console.log('ok')
+        } else {
+            console.log('non va bene ')
+        }//
+
+
+        //7) Switch statement(dichiarazione)
+        let namee = 'Davide';
+        let melma = 60;
+
+        switch (nome) {
+            case 'Davide':
+                console.log('ciao davide')
+                break;
+            case 'Marco':
+                console.log('ciao marco')
+                break;
+            case 'Luca':
+                console.log('ciao luca')
+                break;
+            default:
+                console.log(' Non so il tuo nome')
+        }// lo switch viene utilizzato per cassistiche ,serve a comprimere alcune parti del codice  e il controllo del flusso che valuta un'espressione e confronta  il suo valore con diversi casi
+
+        //8) Ternary operator (condizione )? si o no 
+        //è un operatore ternario  o condizionale ed è una scorciatoia sintattiva per scrivere istruzioni in modo più conciso solitamnte su una singola riga
+        let cacca = 22
+        let culo = (numero < 20) ? "Mirko" : "Niccolò"
+
+        console.log(culo)// in questo caso uscirà Niccolò
+
+
+
+    </script>
+</body>
+
+</html>
