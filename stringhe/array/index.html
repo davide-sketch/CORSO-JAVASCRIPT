@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+
+        //1)Cosè un array:un array è un oggetto lista di valori
+
+        //2) Creare un array 
+        let citta = ['Milano', 'Firenze', 'Roma', 'Bolzano', 'Napoli']
+
+        //3) Accedere e modificare i dati di un array
+        let cittaa = ['Milano', 'Firenze', 'Roma', 'Bolzano', 'Napoli']
+
+        console.log(cittaa[4])//così si accede tramite console.log() dentro si deve mettere il nome della stringa [] e dentro si può mettere un  numero da zero fino 4 come in questo caso
+
+
+        //4) lunghezza di un array e come passare in rassegna tutti gli elementi
+        let cittaaa = ['Milano', 'Firenze', 'Roma', 'Bolzano', 'Napoli']
+        let numero = ['5', '6', '7', '22', '34', '89']
+
+        console.log(cittaaa[citta.length - 2])// così si definsce la lunghezza
+        for (i = 0; i < numero.length; i++) {
+            console.log(numero[i]);
+        }// ecco questo è un ciclo un metodo diverso dal console.log 
+
+
+        //5) Convertire stringhe in array e array split () join()
+
+        let index = 'Milano,Torino, Roma, Bolzano, Napoli';
+        let city = index.split(',')// trasforma una stringa in un array
+        let vados = ['Milano', 'Firenze', 'Roma', 'Bolzano', 'Napoli']
+        let date = vados.join('-')//trasforma un array in una stringa
+
+        console.log(city)
+        console.log(date)
+
+
+
+        //6) Aggiungere e rimuovere elementi push() pop() unshift() shift()
+        let vis = ['Milano', 'Firenze', 'Roma', 'Bolzano', 'Napoli']
+        vis.push('Venezia')// così si Aggiungere alla fine
+        vis.pop()//cosi elimina alla fine
+        vis.unshift('Belluno')// così aggiungera alla prima della lista
+        vis.shift()// così elimina la prima della lista
+    </script>
+</body>
+
+</html>

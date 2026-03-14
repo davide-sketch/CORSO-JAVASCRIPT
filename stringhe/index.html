@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stringa</title>
+</head>
+
+<body>
+    <script>
+        //1) Creare una Stringa
+        let testo = 'ciao sono Niccolò'//le virgolette sono (quotes) apici
+
+        //2) Singoli apici(quotes) vs doppi apici
+        let persona = "ciao sono Davide l'intellingente"// doppio apice 
+        //si possono usare più di due apici singoli usando l'escape che lo vediamo qui sotto
+
+        //3) Fare l' escape dei caratteri in una stringa
+        let text = 'ciao sono Nicolò l' / 'intelletuale' //questo è un escape
+
+        //4) Concatenare stringhe 
+        let nome = 'Celtrude';
+        let txt = 'Ciao sono' + nome;// nella console uscirà il nome descritto
+        let txtf = 'Ciao sono' + 'Niccolò';//invece qui prevale la seconda stringa
+
+        console.log(txt)
+
+        //5) Numeri vs stringhe
+        let name = 'Alfio' + 67;//uscirà una stringa (Alfio67) 
+        let numero = '64' + '64';//uscirà una stringa(6464) per trasformarla in numero ve lo mostro sotto
+        let number = Number('68') + 68;// uscirà la somma dei due numeri
+        let albero = 58;
+        let pianta = '86' + albero.toString() //passaggio da numero a stringa
+
+        console.log(name)
+        console.log(numero)
+
+        //6) Template literals ``:è uan interpolazione delle variabili che permettono di inserire facilmente variabili o espressioni all'interno delle stringhe utillizando uan sintassi più pulita
+        let foglia = "sono il migliore";
+        let elemento = `<h1>${20 + 5} bellissima<h1>`//questa è la magia  di template literals che si puo andare d'accapo senza intaccare l'html 
+
+
+        document.body.innerHTML = elemento
+    </script>
+</body>
+
+</html>

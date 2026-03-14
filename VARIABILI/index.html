@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<body>
+
+  <style>
+    p {
+      font-family: 'helve neue', helvetica, sans-ser;
+      letter-spacing: 1px;
+      text-trasform: uppercase;
+      text-alingn: ceenter;
+      border: 2px solid rgba(0, 0, 200, 0.6);
+      background: rgba(0, 0, 200, 0.3);
+      color: rgba(0, 0, 200, 0.6);
+      box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+      border-radius: 10px;
+      padding: 3px 10px;
+      display: inline-block;
+      cursor: poiter;
+
+    }
+  </style>
+  </head>
+  <p>Player 1: Chris</p>
+  <script>
+    const paragraph = document.querySelector('p');
+    paragraph.addEventListener('click', updateName)
+
+    function updateName() {
+      let name = prompt('Enter a new name');
+      paragraph.textContent = 'Player 1:' + name;
+    }
+  </script>
+
+  <script>
+    //1) Cos'è una variabile:è una scatola per memorizzare dati
+
+    //2) Dichiarazione  una variabile (regole nome variabile)
+
+    let nome;
+    let cognome;
+    let eta;
+    let hobby;
+    let codiceFiscale;
+    let nomeUtente;
+    let nome_utente;
+
+    console.log(nome);
+    console.log(cognome);
+    console.log(eta);
+    console.log(hobby);
+    console.log(codiceFiscale);
+    console.log(nomeUtente);
+    console.log(nome_utente);
+
+    //3) Inizializzare  la variabile
+
+    nome = 'Davide';
+    cognome = 'Richhiuti';
+    eta = 31;
+    hobby = 'Sport';
+    codiceFiscale = 'fcgbwihejewewi';
+    nomeUtente = 'Mario';
+    nome_utente = 'Rossi';
+
+    console.log(nome);
+    console.log(cognome);
+    console.log(eta);
+    console.log(hobby);
+    console.log(codiceFiscale);
+    console.log(nomeUtente);
+    console.log(nome_utente);
+
+    //4) Differenza tra var è lef: var è obsoleta e lef è più recente
+
+    //5) Aggiornare la variabile
+    let nome = 'Davide';
+    nome = 'Gianni';
+    let cognome = 'Richhiuti';
+    cognome = 'Volpe';
+    let eta = 31;
+    eta = 33;
+    let hobby = 'Sport';
+    hobby = 'Informatica';
+    let codiceFiscale = 'fcgbwihejewewi';
+    codiceFiscale = 'gyfbediuwff';
+
+    console.log(nome);
+    console.log(cognome);
+    console.log(eta);
+    console.log(hobby);
+    console.log(codiceFiscale);
+
+    //6) Tipi di variabili: numeri,stringa,boolean,array,oggetti*
+    let numero = '30';  //numero ordinario
+    let float = '3,22222'; //numero decimale 
+    let nome = 'Davide';//stringa
+    let valore = 'Vero o Falso';//boolean
+    let frutta = ['Mango', 'Banana', 'Mela';]//array
+    let persona = {
+      nome = 'Davide';
+      cognome = 'Richhiuti';
+      eta = 31;
+      hobby = 'Sport';
+      codiceFiscale = 'fcgbwihejewewi';
+      citta='Milano';
+      coloriPreferiti=['rosso', 'nero', 'blue']//ogetto
+
+    };
+
+    console.log(numero);
+    console.log(float);
+    console.log(nome);
+    console.log(valore);
+    console.log(frutta[2]);//indice array
+    console.log(persona.nome)
+
+    //7) Tipizzazione dinamica
+    let essere = 'Alfredo'//uscirà una stringa
+    let genere = '56'//uscira un numero se invece si fà così:
+    let persona = 'Gianni'
+    persona = 60// uscirà un numero p
+
+    console.log(typeof essere);
+    console.log(typeof genere);
+    console.log(typeof persona);
+
+    //8) Costamte in Javascript
+    const persona = 'Luca';
+    persona = 'Gianni';
+
+    console.log(persona);
+    //verrà segnata nella console un errore 
+  </script>
+
+</body>
+
+</html>

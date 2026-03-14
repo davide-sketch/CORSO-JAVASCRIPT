@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematica di base</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script>
+
+        //1) tipi di numeri:interi,float,double,binary,octal,esadecimali
+        const numero = 33;//interi
+        const numero = 33.3333333;//float fino a 7decimali
+        const numero = 66.66666666666666;//double fino a 10 decimali
+        const numero = 1011001;//binary
+
+        console.log(typeof numero);
+
+        //2) E'tutto un numero: in javascript qualsiasi tipi uscirà sempre numero
+
+        //3) Esempio di metodo per numeri toFixed()
+        const numero = 74.875430
+
+        console.log(numero.toFixed(3));//indice di decimali che si vogliono visualizzare
+
+        //4) Convcertire un numero in stringa()
+        const numero = '56';//basta mettere delle virgolette
+        const numero = '43' + 3;
+        const numero = '55'
+
+        console.log(typeof numero)
+        console.log(numero)//uscirà nella console 433 perchè viene trasformato in una stringa
+        console.log(Number(numero) + 3)//uscirà nella console la somma dei due numeri in questo caso è 58 perchè vengono annulate le virgolette che la trasfomravano in una stringa
+
+        //5) Operazioni :addizione'+' , sottrazione'-',divsione'/',moltiplicazione'*',resto'%' e potenza '**'
+
+        const numero = 65 + 3;
+        const numero = 76 - 6;
+        const numero = 40 / 5;
+        const numero = 44 * 2;
+        const numero = 43 % 5;
+
+
+        console.log(numero);
+        console.log(numero);
+        console.log(numero);
+        console.log(numero);
+        console.log(numero);
+
+        //6) Precedenza degli operatori
+        const numero = 23 + 4 * 45 + 6;//precedenza alla moltiplicazione
+        const numero = (56 + 3) * (45 + 6);//precedenza all'addizione
+
+        console.log(numero);
+        console.log(numero);
+
+        //7) Operatori di incremento e decremento ++ --
+        let numero = 10
+        numero = ++;//incredementa di una unità in questo caso 11
+        numero = --;//decremento di una unità in nquesto caso 9
+
+        console.log(numero)
+        console.log(numero)
+
+        //8) Operatori di assegnazione = += -= /= *=
+        let numero = 23
+        let numero = 23
+        let numero = 23
+        let numero = 23
+        numero = numero + 5// per evitarare di scrivre sempre così 
+        numero += 5;// si da una assegnazione per abbreviare la procedura
+        numero -= 6;
+        numero /= 6;
+        numero *= 6;
+
+        //9) Operatori di comparazione === !== (== !=) < > <= >=
+        let numero = 20
+
+        console.log(numero > 11) //è maggiore quindi mi darà true(vero)
+        console.log(numero < 11)// è minore""false(falso)
+        console.log(numerop >= 20)// è maggiore uguale""true
+        console.log(numero <= 20)//  è minore uguale""false
+        console.log(numero == 20)//è uguale uguale"" true
+        console.log(numero != 20)//è diverso"""false
+        console.log(numero != 22)//è diverso"""true
+
+        let numero = '20'
+
+        console.log(numero === 20)// mi darà false perchè non è indentico alla stringa
+        console.log(numero == 20)// mi darà true perchè tecnicamente uguale al valore numero
+    </script>
+</body>
+
+</html>

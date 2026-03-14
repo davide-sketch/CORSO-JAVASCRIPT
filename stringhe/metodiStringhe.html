@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodi di stringhe</title>
+</head>
+
+<body>
+    <script>
+        //1) Una stringa è un oggeto:in javascript ogni oggetto ha dei metodi e delle funzioni per fare qualcosa
+
+        //2) Lunghezza di una stringa 
+        let stringa = 'sono fortissimo'
+
+        console.log(stringa.length)
+        // Utillizare length ci darà nella console il numero dei caratteri presenti nella stringa
+
+
+        //3) Prendere un carattere specifico 
+        let string = 'sono fortissimo'
+
+
+        console.log(string[5])// così si prende una carattere specifico come in un indice di un array
+
+        console.log(string[string.length - 2])//così  ci darà in console la penultima lettera, invece se si scrive -1 viene preso l'ultimo carratere 
+
+        //4) Prendere una parte di stringa : indexof slice
+        let alba = 'non essere abbatuto nella vita'
+        let tramondo = alba.indexOf('abbatuto')
+
+        console.log(alba.indexOf('abbatuto'))// indexOf dirrà il numero del posizionamento della stringa  
+
+        console.log(alba.slice(tramondo))//slice dirrà da dove vogliamo tagliare la stringa o meglio prendere quella parte che vogliamo
+
+        //5) Cambiare il Case di una stringa  toUpperCase  toLowerCase
+        let meet = "Essere forti nella vita"
+        let mel = "SI NASCE SOLI  E SI MUORE SOLI"
+
+        console.log(meet.toUpperCase())//così il testo diventa grande
+        console.log(mel.toLowerCase())//così il testo diventa piccolo
+
+        //6) Cambiare parti di una stringa replace
+        let vet = "Non abbarteti ma abbattili"
+
+        console.log(vet.replace('abbarteti', 'rimuginare'))//in questo caso si sostitusce la parola di cui si vuole
+    </script>
+</body>
+
+</html>
