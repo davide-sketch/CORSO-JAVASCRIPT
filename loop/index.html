@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cicli</title>
+</head>
+
+<body>
+    <script>
+        //1) Introduzione :I cicli in JS noti come loop sono concetti astratti di controllo;
+
+        // 2) Perchè ci servono i loop : permettono di ripetre l'esecuzione di un blocco di codice finchè una determinata condizione è vera(true) ;evitano la ripetizione manuele del codice permetendo di eseguire un'azione più volte ,ad esempio iterare(ripetere) su array,oggetti o contatori
+        let tette = [34, 45, 56, 78, 87, 54, 90];
+
+        //inizio loop
+        console.log(cazzo[0])
+        //fine loop
+
+        //3) Loop for:viene utizzato quando si conosce il numero di iterazioni (ripetizioni)
+
+        for (let i = 0; i < tette.length; ì++) {
+            console.log(tette[i])
+        }
+        //Prima cosa definiamo una variabile i=0
+        //Secondo ce il contatore o la condizione
+        //Terzo cè il iteratore
+
+
+        //4) Uscire dai loop con break:interrompe un loop e si passa all'istruzione succesiva ;si deve mettere dopo la console.log
+
+        for (let i = 0; i < tette.length; ì++) {
+            console.log(tette[i])
+            if (tette[i] == 56) {
+                break;
+            }
+        }
+        //5) Saltare l'interazione con continue :invece con continue  si deve mettere prima di console ,salta l' iterazione e passa alla successiva ; salta  e sceglire quale stringa o i numero come pari o dispari
+        for (let i = 0; i < tette.length; ì++) {
+            if (tette[i] == 56) {
+                continue;
+            }
+            console.log(tette[i])
+        }
+        //6) While e do do while:la differenza del do che esegue il codice prima di verificare la condizione invece il while come al for verifica la condizione ed esegue il codice esclusivamente se la condizione è verificabile;
+        let arrayyy = [34];
+        let i = 1;
+        while (i < arrayyy.length) {
+            console.log('while:', arrayyy[i - 1]);
+            i++;
+        }
+        let k = 1;
+        do {
+            console.log('do while', arrayyy[k - 1]);
+            k++;
+        } while (k < arrayyy.length)
+        //in questo cosa nella console verrà mostrata solo il do while
+
+
+    </script>
+</body>
+
+</html>
