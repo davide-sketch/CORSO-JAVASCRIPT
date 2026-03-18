@@ -1,0 +1,50 @@
+<!-- Il Fattoriale (Funzione Ricorsiva)
+Scrivi una funzione chiamata "fattoriale" che calcoli il fattoriale di un numero N.
+
+Il fattoriale di N (scritto N!) è il prodotto di tutti i numeri interi da 1 a N.
+
+Esempio:
+  5! = 5 × 4 × 3 × 2 × 1 = 120
+  3! = 3 × 2 × 1 = 6
+  0! = 1 (per definizione)
+
+Esempi di output:
+
+Input: n = 5
+Output: "5! = 120"
+
+Input: n = 7
+Output: "7! = 5040"
+
+Versione base (con ciclo for):
+  - usa un ciclo for che moltiplica i numeri da 1 a N
+
+Versione avanzata (ricorsione):
+  - una funzione è ricorsiva quando chiama se stessa
+  - il fattoriale si presta bene: fattoriale(n) = n * fattoriale(n - 1)
+  - ogni funzione ricorsiva ha bisogno di un CASO BASE che ferma la ricorsione:
+    if (n === 0 || n === 1) return 1
+
+Suggerimento sulla ricorsione:
+  function fattoriale(n) {
+    if (n <= 1) return 1;        // caso base: ferma la ricorsione
+    return n * fattoriale(n - 1); // chiamata ricorsiva
+  } -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 6 - Fattoriale</title>
+</head>
+
+<body>
+    <script>
+        // scrivi qui il tuo codice
+
+    </script>
+</body>
+
+</html>
